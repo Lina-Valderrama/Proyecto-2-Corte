@@ -7,12 +7,9 @@
  *
  * @author uestudiantes
  */
-public class Viaje {
-    
-    private String destino;
-    private double precio;
-    private int duracionDias;
-    private boolean disponible;
-    
+public class viajeNacional extends Viaje {
+    private String ciudadOrigen;
+    private int cantidadHoras;
+    private double recargo;
+    char codigoAeropuerto;
 }
-
