@@ -7,6 +7,6 @@
  *
  * @author uestudiantes
  */
-public class viajeInternacional {
+public class viajeInternacional extends Viaje{
     
 }
