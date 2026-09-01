@@ -15,5 +15,5 @@ public class Viaje {
     private boolean disponible;
     
 }
-class viajeNacional 
+class viajeNacional extends Viaje{
 }
