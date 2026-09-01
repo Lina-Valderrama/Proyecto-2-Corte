@@ -8,5 +8,8 @@
  * @author uestudiantes
  */
 public class viajeAventura {
-    
+ private String actividad;
+ private int nivelDificultad;
+ private double costoEquipo;
+ private char codigoActividad;
 }
