@@ -8,5 +8,8 @@
  * @author uestudiantes
  */
 public class viajeInternacional extends Viaje{
-    
+    private String paisDestino;
+    private int cantidadEscala;
+    private double impuesto;
+    private char moneda;   
 }
