@@ -28,6 +28,7 @@ public class viajeInternacional extends Viaje{
         this.moneda= moneda;
     }
     public viajeInternacional(String paisDestino, int cantidadEscala){
-        
+        this.paisDestino= paisDestino;
+        this.cantidadEscala= cantidadEscala;
     }
 }
