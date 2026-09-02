@@ -12,7 +12,10 @@ public class Viaje {
     private String destino;
     private double precio;
     private int duracionDias;
-    private boolean disponible;
+    private boolean disponible;  
     
+   public Viaje(String destino,double precio, int duracionDias,boolean diponible){
+    
+}
 }
 
