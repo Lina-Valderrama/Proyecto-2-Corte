@@ -12,4 +12,9 @@ public class viajeAventura extends Viaje{
  private int nivelDificultad;
  private double costoEquipo;
  private char codigoActividad;
+ 
+ public viajeAventura(){
+     
+ }
+ 
 }
