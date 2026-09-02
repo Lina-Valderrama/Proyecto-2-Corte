@@ -7,7 +7,7 @@
  *
  * @author uestudiantes
  */
-public class viajeAventura {
+public class viajeAventura extends Viaje{
  private String actividad;
  private int nivelDificultad;
  private double costoEquipo;
