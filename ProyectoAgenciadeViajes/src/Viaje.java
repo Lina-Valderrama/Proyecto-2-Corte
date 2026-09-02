@@ -14,6 +14,9 @@ public class Viaje {
     private int duracionDias;
     private boolean disponible;  
     
+    public Viaje(){
+        
+    }
    public Viaje(String destino,double precio, int duracionDias,boolean diponible){
        this.destino= destino;
        this.precio= precio;
@@ -26,6 +29,7 @@ public class Viaje {
        this.precio= precio;
        
    }
+
    public Viaje(String destino, double precio,int duracionDias){
        this.destino= destino;
        this.precio= precio;

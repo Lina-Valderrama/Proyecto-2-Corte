@@ -12,4 +12,8 @@ public class viajeNacional extends Viaje {
     private int cantidadHoras;
     private double recargo;
     private char codigoAeropuerto;
+
+    public viajeNacional(){
+        
+    }
 }
