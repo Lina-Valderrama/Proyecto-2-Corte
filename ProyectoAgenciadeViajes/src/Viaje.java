@@ -15,7 +15,14 @@ public class Viaje {
     private boolean disponible;  
     
    public Viaje(String destino,double precio, int duracionDias,boolean diponible){
+       this.destino= destino;
+       this.precio= precio;
+       this.duracionDias= duracionDias;
+       this.disponible= diponible;
     
 }
+   public Viaje(String destino, double precio){
+       
+   }
 }
 
