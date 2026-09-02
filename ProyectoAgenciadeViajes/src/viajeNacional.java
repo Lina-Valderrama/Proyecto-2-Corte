@@ -15,5 +15,5 @@ public class viajeNacional extends Viaje {
 
     public viajeNacional(){
         
-    }
+}
 }
