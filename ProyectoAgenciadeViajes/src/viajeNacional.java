@@ -26,4 +26,7 @@ public class viajeNacional extends Viaje {
         this.ciudadOrigen= ciudadOrigen;
         this.cantidadHoras= cantidadHoras;
     }
+    public viajeNacional(String ciudadOrigen){
+        this.ciudadOrigen= ciudadOrigen;
+    }
 }
