@@ -12,4 +12,8 @@ public class viajeInternacional extends Viaje{
     private int cantidadEscala;
     private double impuesto;
     private char moneda;   
+    
+    public viajeInternacional(){
+        
+    }
 }
