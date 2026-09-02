@@ -22,4 +22,7 @@ public class viajeInternacional extends Viaje{
         this.impuesto= impuesto;
         this.moneda= moneda;
     }
+    public viajeInternacional(String paisDestino, int cantidadEscala,char moneda){
+        
+    }
 }
