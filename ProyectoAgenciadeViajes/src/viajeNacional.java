@@ -23,5 +23,7 @@ public class viajeNacional extends Viaje {
         this.codigoAeropuerto= codigoAeropuerto;
     }
     public viajeNacional(String ciudadOrigen,int cantidadHoras){
+        this.ciudadOrigen= ciudadOrigen;
+        this.cantidadHoras= cantidadHoras;
     }
 }
