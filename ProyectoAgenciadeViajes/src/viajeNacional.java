@@ -16,4 +16,7 @@ public class viajeNacional extends Viaje {
     public viajeNacional(){
         
 }
+    public viajeNacional(String ciudadOrigen, int cantidadHoras, double recargo, char codigoAeropuerto){
+        
+    }
 }
