@@ -22,6 +22,11 @@ public class Viaje {
     
 }
    public Viaje(String destino, double precio){
+       this.destino= destino;
+       this.precio= precio;
+       
+   }
+   public Viaje(String destino,s double precio,int duracionDias){
        
    }
 }
