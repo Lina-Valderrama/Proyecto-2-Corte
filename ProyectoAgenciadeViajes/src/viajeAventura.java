@@ -27,4 +27,6 @@ public class viajeAventura extends Viaje{
      this.nivelDificultad= nivelDificultad;
      this.costoEquipo= costoEquipo;
     }
+ public viajeAventura(String actividad, int nivelDificultad){
+ }
 }
