@@ -16,47 +16,53 @@ public class ProyectoAgenciadeViajes {
      */
     
     public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
-        System.out.println("¿Los viajes están disponibles? (1 = Sí, 2 = No)");
-        int opcion = entrada.nextInt();
-        boolean disponible;
-        if (opcion == 1) {
-            disponible = true;
-        } else {
-            disponible = false;
-}
-        Viaje viaje1 = new Viaje("Brasil", 1500, 30, disponible);
         
-        System.out.println(viaje1);
+        Viaje viaje1 = new Viaje("Brasil", 1500, 30, true);
         
-        Viaje viaje2 = new Viaje("México", 1200, 30, disponible);
+        Viaje viaje2 = new Viaje("México", 1200, 30, true);
         
-        System.out.println(viaje2);
-        
-        ViajeInternacional internacional1 = new ViajeInternacional("España", 3500, 12, disponible, "Bogotá", 2, 450, '€');
-        
-        System.out.println(internacional1);
+        ViajeInternacional internacional1 = new ViajeInternacional("España", 3500, 12, true, "Bogotá", 2, 450, '€');
   
-        ViajeInternacional internacional2 = new ViajeInternacional("Francia", 3200, 10, disponible, "Bogotá", 2, 450, '€');
+        ViajeInternacional internacional2 = new ViajeInternacional("Francia", 3200, 10, true, "Bogotá", 2, 450, '€');
         
-        System.out.println(internacional2);
+        ViajeNacional nacional1 = new ViajeNacional("Medellín", 500, 3, true, "Bogotá", 1, 50, 'M');
         
-        ViajeNacional nacional1 = new ViajeNacional("Medellín", 500, 3, disponible, "Bogotá", 1, 50, 'M');
+        ViajeNacional nacional2 = new ViajeNacional("Cartagena", 800, 5, true, "Bogotá", 2);
         
-        System.out.println(nacional1);
+        ViajeAventura aventura1 = new ViajeAventura("San Gil", 900, 4, true, "Rafting", 3, 200, 'R');
         
-        ViajeNacional nacional2 = new ViajeNacional("Cartagena", 800, 5, disponible, "Bogotá", 2);
+        ViajeAventura aventura2 = new ViajeAventura("Salento", 700, 3, true, "Senderismo", 2);
         
-        System.out.println(nacional2);
-        
-        ViajeAventura aventura1 = new ViajeAventura("San Gil", 900, 4, disponible, "Rafting", 3, 200, 'R');
-        
-        System.out.println(aventura1);
-        
-        ViajeAventura aventura2 = new ViajeAventura("Salento", 700, 3, disponible, "Senderismo", 2);
-        
-        System.out.println(aventura2);
+         Scanner entrada = new Scanner(System.in);
+        int opcion;
+
+        do {
+            System.out.println("¿Desea ver los viajes? (1 = Sí, 2 = No)");
+            opcion = entrada.nextInt();
+
+            if (opcion == 1) {
+                System.out.println(viaje1);
+                System.out.println(viaje2);
+
+                System.out.println(internacional1);
+                System.out.println(internacional2);
+
+                System.out.println(nacional1);
+                System.out.println(nacional2);
+
+                System.out.println(aventura1);
+                System.out.println(aventura2);
+            }
+
+        } while (opcion == 2);
+
+        entrada.close();
     }
+} 
+
+        
+
     
     
-}
+
+
