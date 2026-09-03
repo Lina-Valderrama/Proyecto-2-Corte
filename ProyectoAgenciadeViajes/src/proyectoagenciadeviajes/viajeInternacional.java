@@ -60,7 +60,7 @@ public class ViajeInternacional extends Viaje{
     return "ViajeInternacional{" +
             "destino='" + getDestino() + '\'' +
             ", precio=" + getPrecio() +
-            ", duracionDias=" + getDuracionDias() +
+            ", duracionDias=" + getcantidadEscala() +
             ", disponible=" + isDisponible() +
             ", paisDestino='" + paisDestino + '\'' +
             ", cantidadEscala=" + cantidadEscala +
