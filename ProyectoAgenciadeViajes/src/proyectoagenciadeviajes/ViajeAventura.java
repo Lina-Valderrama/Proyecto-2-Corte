@@ -44,4 +44,16 @@ public double getcostoEquipo() {
 public char getcodigoActividad() {
     return codigoActividad;
 }
+public void setactividad(String actividad) {
+        this.actividad = actividad;
+    }
+public void setnivelDificultad(int nivelDificultad) {
+        this.nivelDificultad = nivelDificultad;
+    }
+public void setcostoEquipo(double costoEquipo) {
+        this.costoEquipo = costoEquipo;
+    }
+public void setcodigoActividad(char codigoActividad) {
+        this.codigoActividad = codigoActividad;
+    }
 }
