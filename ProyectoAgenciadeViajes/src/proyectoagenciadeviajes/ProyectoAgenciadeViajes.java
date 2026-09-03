@@ -25,6 +25,7 @@ public class ProyectoAgenciadeViajes {
         } else {
             disponible = false;
 }
+        Viaje viaje1 = new Viaje("Brasil", 1500, 30, disponible);
         
         
         
