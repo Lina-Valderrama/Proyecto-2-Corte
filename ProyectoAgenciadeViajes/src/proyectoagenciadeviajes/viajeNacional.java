@@ -15,7 +15,7 @@ public class ViajeNacional extends Viaje {
     private char codigoAeropuerto;
 
     public ViajeNacional(){
-        
+    super();    
 }
     public ViajeNacional(String ciudadOrigen, int cantidadHoras, double recargo, char codigoAeropuerto){
         this.ciudadOrigen= ciudadOrigen;
@@ -23,11 +23,10 @@ public class ViajeNacional extends Viaje {
         this.recargo= recargo;
         this.codigoAeropuerto= codigoAeropuerto;
     }
-    public ViajeNacional(String ciudadOrigen,int cantidadHoras){
-        this.ciudadOrigen= ciudadOrigen;
-        this.cantidadHoras= cantidadHoras;
+     public ViajeNacional(String ciudadOrigen, int cantidadHoras, char codigoAeropuerto) {
+         this(ciudadOrigen, cantidadHoras, 5, codigoAeropuerto);
     }
-    public ViajeNacional(String ciudadOrigen){
-        this.ciudadOrigen= ciudadOrigen;
+    public ViajeNacional(String ciudadOrigen, int cantidadHoras) {
+        this(ciudadOrigen, cantidadHoras, 5, 'N');
     }
 }
