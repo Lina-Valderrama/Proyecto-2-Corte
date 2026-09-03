@@ -16,21 +16,21 @@ public class ProyectoAgenciadeViajes {
      */
     
     public static void main(String[] args) {
-        // Se usa el constructor de 4 parámetros porque se conocen todos los datos básicos del viaje.
+        // Se usa el constructor de 4 parametros porque se conocen todos los datos basicos del viaje.
         Viaje viaje1 = new Viaje("Brasil", 150000, 30, true);
-        // Se usa el constructor de 2 parámetros porque en este caso solo se conocen el destino y el precio.
+        // Se usa el constructor de 2 parametros porque en este caso solo se conocen el destino y el precio.
         Viaje viaje2 = new Viaje("Mexico", 120000);
-        // Se usa el constructor de 8 parámetros porque se conocen todos los datos del viaje internacional.
+        // Se usa el constructor de 8 parametros porque se conocen todos los datos del viaje internacional.
         ViajeInternacional internacional1 = new ViajeInternacional("Espana",35000, 12, true, "España", 2, 450, '€');
-        // Se usa el constructor de 7 parámetros porque no se especifica el impuesto.
+        // Se usa el constructor de 7 parametros porque no se especifica el impuesto.
         ViajeInternacional internacional2 = new ViajeInternacional("Francia", 32000, 10, true, "Francia", 2, '€');
-        // Se usa el constructor de 8 parámetros porque se conocen todos los datos del viaje nacional.
+        // Se usa el constructor de 8 parametros porque se conocen todos los datos del viaje nacional.
         ViajeNacional nacional1 = new ViajeNacional("Medellin", 50000, 3, true, "Bogotá", 1, 50, 'M');
-        // Se usa el constructor de 6 parámetros porque no se especifican el recargo ni el código de aeropuerto.
+        // Se usa el constructor de 6 parametros porque no se especifican el recargo ni el codigo de aeropuerto.
         ViajeNacional nacional2 = new ViajeNacional("Cartagena", 8000, 5, true, "Bogotá", 2);
-        // Se usa el constructor de 8 parámetros porque se conocen todos los datos de la actividad de aventura.
+        // Se usa el constructor de 8 parametros porque se conocen todos los datos de la actividad de aventura.
         ViajeAventura aventura1 = new ViajeAventura("San Gil", 90000, 4, true, "Rafting", 3, 200, 'R');
-        // Se usa el constructor de 7 parámetros porque no se especifica el código de actividad.
+        // Se usa el constructor de 7 parametros porque no se especifica el código de actividad.
         ViajeAventura aventura2 = new ViajeAventura("Salento", 70000, 3, true, "Senderismo", 2, 150);
          Scanner entrada = new Scanner(System.in);
         int opcion; 
