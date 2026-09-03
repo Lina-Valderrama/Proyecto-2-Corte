@@ -36,4 +36,16 @@ public class Viaje {
        this(destino, precio, duracionDias, false);
        
    }
+  public String getDestino() {
+    return destino;
+}
+  public double getPrecio() {
+    return precio;
+}
+  public int getDuracionDias() {
+    return duracionDias;
+}
+  public boolean isDisponible() {
+    return disponible;
+}
 }
