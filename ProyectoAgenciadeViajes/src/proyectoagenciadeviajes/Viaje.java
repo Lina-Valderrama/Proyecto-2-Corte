@@ -48,4 +48,18 @@ public class Viaje {
   public boolean isDisponible() {
     return disponible;
 }
+  public void setDestino(String destino) {
+        this.destino = destino;
+  }
+   public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+
+    public void setDuracionDias(int duracionDias) {
+        this.duracionDias = duracionDias;
+    }
+
+    public void setDisponible(boolean disponible) {
+        this.disponible = disponible;
+    }
 }
