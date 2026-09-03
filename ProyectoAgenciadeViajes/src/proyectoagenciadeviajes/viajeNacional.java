@@ -29,4 +29,16 @@ public class ViajeNacional extends Viaje {
     public ViajeNacional(String ciudadOrigen, int cantidadHoras) {
         this(ciudadOrigen, cantidadHoras, 5, 'N');
     }
+    public String getciudadOrigen(){
+        return(ciudadOrigen);
+    }
+    public int getcantidadHoras(){
+        return(cantidadHoras);
+}
+    public double getrecargo(){
+        return(recargo);
+}
+    public char getcodigoAeropuerto(){
+        return(codigoAeropuerto);
+    }
 }
