@@ -41,4 +41,16 @@ public class ViajeNacional extends Viaje {
     public char getcodigoAeropuerto(){
         return(codigoAeropuerto);
     }
+    public void setciudadOrigen(String ciudadOrigen){
+        this.ciudadOrigen= ciudadOrigen;
+    }
+    public void setcantidadHoras(int cantidadHoras){
+        this.cantidadHoras= cantidadHoras;
+    }
+    public void setrecargo(double recargo){
+        this.recargo= recargo;
+    }
+    public void setcodigoAeropuerto(char codigoAeropuerto){
+        this.codigoAeropuerto= codigoAeropuerto;
+    }
 }
