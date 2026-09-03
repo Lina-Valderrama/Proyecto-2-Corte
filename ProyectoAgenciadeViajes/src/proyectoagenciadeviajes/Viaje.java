@@ -1,3 +1,5 @@
+package proyectoagenciadeviajes;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
@@ -18,7 +20,7 @@ public class Viaje {
         this("Brasil", 1500, 0, false);
         
     }
-   public Viaje(String destino,double precio, int duracionDias,boolean diponible){
+   public Viaje(String destino,double precio, int duracionDias,boolean disponible){
        this.destino= destino;
        this.precio= precio;
        this.duracionDias= duracionDias;

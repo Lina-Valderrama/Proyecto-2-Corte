@@ -14,7 +14,9 @@ public class ProyectoAgenciadeViajes {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        ViajeAventura aventura = new ViajeAventura("Senderismo", 5, 150000, 'A'); 
+ 
     }
     
 }
