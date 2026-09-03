@@ -7,27 +7,27 @@
  *
  * @author uestudiantes
  */
-public class viajeInternacional extends Viaje{
+public class ViajeInternacional extends Viaje{
     private String paisDestino;
     private int cantidadEscala;
     private double impuesto;
     private char moneda;   
     
-    public viajeInternacional(){
+    public ViajeInternacional(){
         
     }
-    public viajeInternacional(String paisDetino, int cantidadEscala, double impuesto, char moneda){
+    public ViajeInternacional(String paisDetino, int cantidadEscala, double impuesto, char moneda){
         this.paisDestino= paisDetino;
         this.cantidadEscala= cantidadEscala;
         this.impuesto= impuesto;
         this.moneda= moneda;
     }
-    public viajeInternacional(String paisDestino, int cantidadEscala,char moneda){
+    public ViajeInternacional(String paisDestino, int cantidadEscala,char moneda){
         this.paisDestino= paisDestino;
         this.cantidadEscala= cantidadEscala;
         this.moneda= moneda;
     }
-    public viajeInternacional(String paisDestino, int cantidadEscala){
+    public ViajeInternacional(String paisDestino, int cantidadEscala){
         this.paisDestino= paisDestino;
         this.cantidadEscala= cantidadEscala;
     }

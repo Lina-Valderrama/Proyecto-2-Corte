@@ -7,27 +7,27 @@
  *
  * @author uestudiantes
  */
-public class viajeAventura extends Viaje{
+public class ViajeAventura extends Viaje{
  private String actividad;
  private int nivelDificultad;
  private double costoEquipo;
  private char codigoActividad;
  
- public viajeAventura(){
+ public ViajeAventura(){
      
  }
- public viajeAventura(String actividad, int nivelDificultad, double costoEquipo, char codigoActividad){
+ public ViajeAventura(String actividad, int nivelDificultad, double costoEquipo, char codigoActividad){
      this.actividad= actividad;
      this.nivelDificultad= nivelDificultad;
      this.costoEquipo= costoEquipo;
      this.codigoActividad= codigoActividad;
  }
- public viajeAventura(String actividad, int nivelDificultad, double costoEquipo){
+ public ViajeAventura(String actividad, int nivelDificultad, double costoEquipo){
      this.actividad= actividad;
      this.nivelDificultad= nivelDificultad;
      this.costoEquipo= costoEquipo;
     }
- public viajeAventura(String actividad, int nivelDificultad){
+ public ViajeAventura(String actividad, int nivelDificultad){
      this.actividad= actividad;
      this.nivelDificultad= nivelDificultad;
  }
