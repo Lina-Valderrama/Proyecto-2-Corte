@@ -17,7 +17,7 @@ public class Viaje {
     private boolean disponible;  
     
     public Viaje(){
-        this("Brasil", 1500, 0, false);
+        this("Brasil", 1500, 30, false);
         
     }
    public Viaje(String destino,double precio, int duracionDias,boolean disponible){
@@ -28,7 +28,7 @@ public class Viaje {
     
 }
    public Viaje(String destino, double precio){
-       this(destino, precio, 0, false);
+       this(destino, precio, 30, false);
        
    }
 
@@ -37,4 +37,3 @@ public class Viaje {
        
    }
 }
-
