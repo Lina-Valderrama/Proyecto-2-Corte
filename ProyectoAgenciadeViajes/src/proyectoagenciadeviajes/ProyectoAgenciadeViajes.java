@@ -31,7 +31,7 @@ public class ProyectoAgenciadeViajes {
         
         ViajeInternacional internacional1 = new ViajeInternacional("España", 3500, 12, disponible, "Bogotá", 2, 450, '€');
   
-        
+        ViajeInternacional internacional2 = new ViajeInternacional("Francia", 3200, 10, disponible, "Bogotá", 2, 450, '€');
     }
     
     
