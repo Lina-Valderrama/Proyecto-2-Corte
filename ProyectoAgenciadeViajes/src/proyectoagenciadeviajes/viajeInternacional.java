@@ -17,7 +17,7 @@ public class ViajeInternacional extends Viaje{
     private char moneda;   
     
     public ViajeInternacional(){
-        
+    super();    
     }
     public ViajeInternacional(String paisDetino, int cantidadEscala, double impuesto, char moneda){
         this.paisDestino= paisDetino;
@@ -33,6 +33,18 @@ public class ViajeInternacional extends Viaje{
     public ViajeInternacional(String paisDestino, int cantidadEscala) {
 
         this(paisDestino, cantidadEscala, 0, 'D');
+    }
+    public String getpaisDestino(){
+        return paisDestino;
+    }
+    public int getcantidadEscala(){
+        return cantidadEscala;
+    }
+    public double getimpuesto(){
+        return impuesto;
+    }
+    public char getmoneda(){
+        return moneda;
     }
 }
 
