@@ -38,6 +38,8 @@ public class ProyectoAgenciadeViajes {
         ViajeNacional nacional2 = new ViajeNacional("Cartagena", 800, 5, disponible, "Bogotá", 2);
         
         ViajeAventura aventura1 = new ViajeAventura("San Gil", 900, 4, disponible, "Rafting", 3, 200, 'R');
+        
+        ViajeAventura aventura2 = new ViajeAventura("Salento", 700, 3, disponible, "Senderismo", 2);
     }
     
     
