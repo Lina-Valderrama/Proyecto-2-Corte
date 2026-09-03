@@ -28,6 +28,8 @@ public class ProyectoAgenciadeViajes {
         Viaje viaje1 = new Viaje("Brasil", 1500, 30, disponible);
         
         Viaje viaje2 = new Viaje("México", 1200, 30, disponible);
+        
+        ViajeInternacional internacional1 = new ViajeInternacional("España", 3500, 12, disponible, "Bogotá", 2, 450, '€');
   
         
     }
