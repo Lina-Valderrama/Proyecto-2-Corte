@@ -17,27 +17,27 @@ public class ProyectoAgenciadeViajes {
     
     public static void main(String[] args) {
         
-        Viaje viaje1 = new Viaje("Brasil", 1500, 30, true);
+        Viaje viaje1 = new Viaje("Brasil", 15000, 30, true);
         
-        Viaje viaje2 = new Viaje("México", 1200, 30, true);
+        Viaje viaje2 = new Viaje("Mexico", 12000, 30, true);
         
-        ViajeInternacional internacional1 = new ViajeInternacional("España", 3500, 12, true, "Bogotá", 2, 450, '€');
+        ViajeInternacional internacional1 = new ViajeInternacional("Espana", 35000, 12, true, "Bogota", 2, 450, '€');
   
-        ViajeInternacional internacional2 = new ViajeInternacional("Francia", 3200, 10, true, "Bogotá", 2, 450, '€');
+        ViajeInternacional internacional2 = new ViajeInternacional("Francia", 32000, 10, true, "Bogota", 2, 450, '€');
         
-        ViajeNacional nacional1 = new ViajeNacional("Medellín", 500, 3, true, "Bogotá", 1, 50, 'M');
+        ViajeNacional nacional1 = new ViajeNacional("Medellin", 5000, 3, true, "Bogota", 1, 50, 'M');
         
-        ViajeNacional nacional2 = new ViajeNacional("Cartagena", 800, 5, true, "Bogotá", 2);
+        ViajeNacional nacional2 = new ViajeNacional("Cartagena", 8000, 5, true, "Bogota", 2);
         
-        ViajeAventura aventura1 = new ViajeAventura("San Gil", 900, 4, true, "Rafting", 3, 200, 'R');
+        ViajeAventura aventura1 = new ViajeAventura("San Gil", 9000, 4, true, "Rafting", 3, 200, 'R');
         
-        ViajeAventura aventura2 = new ViajeAventura("Salento", 700, 3, true, "Senderismo", 2);
+        ViajeAventura aventura2 = new ViajeAventura("Salento", 7000, 3, true, "Senderismo", 2);
         
          Scanner entrada = new Scanner(System.in);
         int opcion;
 
         do {
-            System.out.println("¿Desea ver los viajes? (1 = Sí, 2 = No)");
+            System.out.println("Desea ver los viajes disponibles? (1 = Si, 2 = No)");
             opcion = entrada.nextInt();
 
             if (opcion == 1) {
