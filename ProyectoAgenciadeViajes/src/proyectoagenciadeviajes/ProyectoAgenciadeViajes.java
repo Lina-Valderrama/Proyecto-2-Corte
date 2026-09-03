@@ -34,8 +34,12 @@ public class ProyectoAgenciadeViajes {
         System.out.println(viaje2);
         
         ViajeInternacional internacional1 = new ViajeInternacional("España", 3500, 12, disponible, "Bogotá", 2, 450, '€');
+        
+        System.out.println(internacional1);
   
         ViajeInternacional internacional2 = new ViajeInternacional("Francia", 3200, 10, disponible, "Bogotá", 2, 450, '€');
+        
+        System.out.println(internacional2);
         
         ViajeNacional nacional1 = new ViajeNacional("Medellín", 500, 3, disponible, "Bogotá", 1, 50, 'M');
         
