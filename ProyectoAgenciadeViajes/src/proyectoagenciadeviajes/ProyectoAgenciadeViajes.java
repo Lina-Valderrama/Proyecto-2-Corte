@@ -51,7 +51,11 @@ public class ProyectoAgenciadeViajes {
         
         ViajeAventura aventura1 = new ViajeAventura("San Gil", 900, 4, disponible, "Rafting", 3, 200, 'R');
         
+        System.out.println(aventura1);
+        
         ViajeAventura aventura2 = new ViajeAventura("Salento", 700, 3, disponible, "Senderismo", 2);
+        
+        System.out.println(aventura2);
     }
     
     
