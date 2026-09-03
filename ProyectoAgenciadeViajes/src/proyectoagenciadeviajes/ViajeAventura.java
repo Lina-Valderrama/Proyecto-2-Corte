@@ -32,4 +32,16 @@ public class ViajeAventura extends Viaje{
 public ViajeAventura(String actividad, int nivelDificultad) {
     this(actividad, nivelDificultad, 150000, 'A');
  }
+public String getactividad() {
+    return actividad;
+}
+public int getnivelDificultad() {
+    return nivelDificultad;
+}
+public double getcostoEquipo() {
+    return costoEquipo;
+}
+public char getcodigoActividad() {
+    return codigoActividad;
+}
 }
