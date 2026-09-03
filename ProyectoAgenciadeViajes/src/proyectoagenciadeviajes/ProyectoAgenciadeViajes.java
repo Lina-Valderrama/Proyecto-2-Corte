@@ -16,6 +16,15 @@ public class ProyectoAgenciadeViajes {
      */
     
     public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("¿Los viajes están disponibles? (1 = Sí, 2 = No)");
+        int opcion = entrada.nextInt();
+        boolean disponible;
+        if (opcion == 1) {
+            disponible = true;
+        } else {
+            disponible = false;
+}
         
         
         
