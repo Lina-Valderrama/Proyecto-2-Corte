@@ -15,10 +15,10 @@ public class ViajeAventura extends Viaje{
  private String actividad;
  private int nivelDificultad;
  private double costoEquipo;
- private char numeroActividad;
+ private char codigoActividad;
  
  public ViajeAventura(){
-     
+     super();
  }
  public ViajeAventura(String actividad, int nivelDificultad, double costoEquipo, char codigoActividad){
      this.actividad= actividad;
@@ -26,13 +26,10 @@ public class ViajeAventura extends Viaje{
      this.costoEquipo= costoEquipo;
      this.codigoActividad= codigoActividad;
  }
- public ViajeAventura(String actividad, int nivelDificultad, double costoEquipo){
-     this.actividad= actividad;
-     this.nivelDificultad= nivelDificultad;
-     this.costoEquipo= costoEquipo;
-    }
- public ViajeAventura(String actividad, int nivelDificultad){
-     this.actividad= actividad;
-     this.nivelDificultad= nivelDificultad;
+ public ViajeAventura(String actividad, int nivelDificultad,double costoEquipo) {
+     this(actividad, nivelDificultad, costoEquipo, 'A');
+}
+public ViajeAventura(String actividad, int nivelDificultad) {
+    this(actividad, nivelDificultad, 150000, 'A');
  }
 }
