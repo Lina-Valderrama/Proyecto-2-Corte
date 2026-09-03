@@ -46,5 +46,17 @@ public class ViajeInternacional extends Viaje{
     public char getmoneda(){
         return moneda;
     }
+    public void setpaisDestino(String paisDestino){
+        this.paisDestino= paisDestino;
+    }
+    public void setcantidadEscala(int cantidadEscala){
+        this.cantidadEscala= cantidadEscala;
+    }
+    public void setimpuesto(double impuesto){
+        this.impuesto= impuesto;
+    }
+    public void setmoneda(char moneda){
+        this.moneda= moneda;
+    }
 }
 
