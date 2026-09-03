@@ -63,6 +63,13 @@ public class Viaje {
         this.disponible = disponible;
     }
     @Override
-    public String toString() {return "Viaje{" +"destino='" + destino + '\'' + ", precio=" + precio +", duracionDias=" + duracionDias +", disponible=" + disponible + '}';
-    }
+public String toString() {
+    return "Viaje{" +
+            "\n destino= " + destino + 
+            "\n precio=" + precio +
+            "\n duracionDias=" + duracionDias +
+            "\n disponible=" + disponible +
+            "\n";
+    
+}
 }

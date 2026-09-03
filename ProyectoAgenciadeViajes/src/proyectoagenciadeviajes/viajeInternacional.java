@@ -56,17 +56,17 @@ public class ViajeInternacional extends Viaje{
         this.moneda= moneda;
     }
     @Override
-    public String toString() {
-    return "ViajeInternacional{" +
-            "destino='" + getDestino() + '\'' +
-            ", precio=" + getPrecio() +
-            ", duracionDias=" + getcantidadEscala() +
-            ", disponible=" + isDisponible() +
-            ", paisDestino='" + paisDestino + '\'' +
-            ", cantidadEscala=" + cantidadEscala +
-            ", impuesto=" + impuesto +
-            ", moneda=" + moneda +
-            '}';
-    }
+public String toString() {
+    return "Viaje Internacional" +
+            "\nDestino: " + getDestino() +
+            "\nPrecio: " + getPrecio() +
+            "\nDuracion: " + getDuracionDias() +
+            "\nDisponible: " + isDisponible() +
+            "\nPais destino: " + paisDestino +
+            "\nCantidad de escalas: " + cantidadEscala +
+            "\nImpuesto: " + impuesto +
+            "\nMoneda: " + moneda +
+            "\n";
+}
 }
 

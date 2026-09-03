@@ -53,16 +53,16 @@ public ViajeNacional(String destino,double precio,int duracionDias,boolean dispo
         this.codigoAeropuerto= codigoAeropuerto;
     }
     @Override
-    public String toString() {
-    return "ViajeNacional{" +
-            "destino='" + getDestino() + '\'' +
-            ", precio=" + getPrecio() +
-            ", duracionDias=" + getDuracionDias() +
-            ", disponible=" + isDisponible() +
-            ", ciudadOrigen='" + ciudadOrigen + '\'' +
-            ", cantidadHoras=" + cantidadHoras +
-            ", recargo=" + recargo +
-            ", codigoAeropuerto=" + codigoAeropuerto +
-            '}';
-    }
+public String toString() {
+    return "Viaje Nacional" +
+            "\nDestino: " + getDestino() +
+            "\nPrecio: " + getPrecio() +
+            "\nDuracion: " + getDuracionDias() +
+            "\nDisponible: " + isDisponible() +
+            "\nCiudad de origen: " + ciudadOrigen +
+            "\nCantidad de horas: " + cantidadHoras +
+            "\nRecargo: " + recargo +
+            "\nCodigo de aeropuerto: " + codigoAeropuerto +
+            "\n";
+}
 }

@@ -60,15 +60,15 @@ public void setcodigoActividad(char codigoActividad) {
 
 @Override
 public String toString() {
-    return "ViajeAventura{" +
-            "destino='" + getDestino() + '\'' +
-            ", precio=" + getPrecio() +
-            ", duracionDias=" + getDuracionDias() +
-            ", disponible=" + isDisponible() +
-            ", actividad='" + actividad + '\'' +
-            ", nivelDificultad=" + nivelDificultad +
-            ", costoEquipo=" + costoEquipo +
-            ", codigoActividad=" + codigoActividad +
-            '}';
+    return "Viaje de Aventura" +
+            "\nDestino: " + getDestino() +
+            "\nPrecio: " + getPrecio() +
+            "\nDuracion: " + getDuracionDias() +
+            "\nDisponible: " + isDisponible() +
+            "\nActividad: " + actividad +
+            "\nNivel de dificultad: " + nivelDificultad +
+            "\nCosto del equipo: " + costoEquipo +
+            "\nCodigo de actividad: " + codigoActividad +
+            "\n";
 }
 }
