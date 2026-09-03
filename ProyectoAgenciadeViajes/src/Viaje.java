@@ -15,25 +15,23 @@ public class Viaje {
     private boolean disponible;  
     
     public Viaje(){
+        this("Brasil", 1500, 0, false);
         
     }
    public Viaje(String destino,double precio, int duracionDias,boolean diponible){
        this.destino= destino;
        this.precio= precio;
        this.duracionDias= duracionDias;
-       this.disponible= diponible;
+       this.disponible= disponible;
     
 }
    public Viaje(String destino, double precio){
-       this.destino= destino;
-       this.precio= precio;
+       this(destino, precio, 0, false);
        
    }
 
    public Viaje(String destino, double precio,int duracionDias){
-       this.destino= destino;
-       this.precio= precio;
-       this.duracionDias= duracionDias;
+       this(destino, precio, duracionDias, false);
        
    }
 }
