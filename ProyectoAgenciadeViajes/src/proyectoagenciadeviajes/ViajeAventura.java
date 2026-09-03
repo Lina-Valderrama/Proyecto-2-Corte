@@ -17,21 +17,22 @@ public class ViajeAventura extends Viaje{
  private double costoEquipo;
  private char codigoActividad;
  
- public ViajeAventura(){
-     super();
+public ViajeAventura(String destino,double precio,int duracionDias,boolean disponible,String actividad,int nivelDificultad, double costoEquipo,char codigoActividad) {
+    super(destino, precio, duracionDias, disponible);
+
+    this.actividad = actividad;
+    this.nivelDificultad = nivelDificultad;
+    this.costoEquipo = costoEquipo;
+    this.codigoActividad = codigoActividad;
  }
- public ViajeAventura(String actividad, int nivelDificultad, double costoEquipo, char codigoActividad){
-     this.actividad= actividad;
-     this.nivelDificultad= nivelDificultad;
-     this.costoEquipo= costoEquipo;
-     this.codigoActividad= codigoActividad;
- }
- public ViajeAventura(String actividad, int nivelDificultad,double costoEquipo) {
-     this(actividad, nivelDificultad, costoEquipo, 'A');
+ public ViajeAventura(String destino,double precio,int duracionDias, boolean disponible,String actividad,int nivelDificultad,double costoEquipo) {
+     this(destino, precio, duracionDias, disponible,actividad, nivelDificultad, costoEquipo, 'A');
 }
-public ViajeAventura(String actividad, int nivelDificultad) {
-    this(actividad, nivelDificultad, 150000, 'A');
+public ViajeAventura( String destino,double precio,int duracionDias,boolean disponible,String actividad,int nivelDificultad) {
+    this(destino, precio, duracionDias, disponible,actividad, nivelDificultad, 0, 'A');
+    
  }
+
 public String getactividad() {
     return actividad;
 }
@@ -56,4 +57,18 @@ public void setcostoEquipo(double costoEquipo) {
 public void setcodigoActividad(char codigoActividad) {
         this.codigoActividad = codigoActividad;
     }
+
+@Override
+public String toString() {
+    return "ViajeAventura{" +
+            "destino='" + getDestino() + '\'' +
+            ", precio=" + getPrecio() +
+            ", duracionDias=" + getDuracionDias() +
+            ", disponible=" + isDisponible() +
+            ", actividad='" + actividad + '\'' +
+            ", nivelDificultad=" + nivelDificultad +
+            ", costoEquipo=" + costoEquipo +
+            ", codigoActividad=" + codigoActividad +
+            '}';
+}
 }

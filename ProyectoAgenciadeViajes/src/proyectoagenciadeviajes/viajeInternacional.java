@@ -16,23 +16,20 @@ public class ViajeInternacional extends Viaje{
     private double impuesto;
     private char moneda;   
     
-    public ViajeInternacional(){
-    super();    
-    }
-    public ViajeInternacional(String paisDetino, int cantidadEscala, double impuesto, char moneda){
-        this.paisDestino= paisDetino;
-        this.cantidadEscala= cantidadEscala;
-        this.impuesto= impuesto;
-        this.moneda= moneda;
-    }
-    public ViajeInternacional(String paisDestino, int cantidadEscala,
-            char moneda, double impuesto) {
+    public ViajeInternacional(String destino,double precio,int duracionDias,boolean disponible,String paisDestino,int cantidadEscala,double impuesto,char moneda) {
+         super(destino, precio, duracionDias, disponible);
 
-        this(paisDestino, cantidadEscala, impuesto, moneda);
+        this.paisDestino = paisDestino;
+        this.cantidadEscala = cantidadEscala;
+        this.impuesto = impuesto;
+        this.moneda = moneda;
     }
-    public ViajeInternacional(String paisDestino, int cantidadEscala) {
-
-        this(paisDestino, cantidadEscala, 0, 'D');
+    public ViajeInternacional(String destino,double precio,int duracionDias,boolean disponible,String paisDestino,int cantidadEscala,char moneda) {
+        this(destino, precio, duracionDias, disponible,paisDestino, cantidadEscala, 0, moneda);
+    }
+    
+    public ViajeInternacional(String destino,double precio,int duracionDias,boolean disponible,String paisDestino, int cantidadEscala) {
+        this(destino, precio, duracionDias, disponible,paisDestino, cantidadEscala, 0, '$');
     }
     public String getpaisDestino(){
         return paisDestino;
@@ -57,6 +54,19 @@ public class ViajeInternacional extends Viaje{
     }
     public void setmoneda(char moneda){
         this.moneda= moneda;
+    }
+    @Override
+    public String toString() {
+    return "ViajeInternacional{" +
+            "destino='" + getDestino() + '\'' +
+            ", precio=" + getPrecio() +
+            ", duracionDias=" + getDuracionDias() +
+            ", disponible=" + isDisponible() +
+            ", paisDestino='" + paisDestino + '\'' +
+            ", cantidadEscala=" + cantidadEscala +
+            ", impuesto=" + impuesto +
+            ", moneda=" + moneda +
+            '}';
     }
 }
 

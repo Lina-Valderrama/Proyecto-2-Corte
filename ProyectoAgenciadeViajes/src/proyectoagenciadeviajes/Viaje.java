@@ -62,4 +62,7 @@ public class Viaje {
     public void setDisponible(boolean disponible) {
         this.disponible = disponible;
     }
+    @Override
+    public String toString() {return "Viaje{" +"destino='" + destino + '\'' + ", precio=" + precio +", duracionDias=" + duracionDias +", disponible=" + disponible + '}';
+    }
 }

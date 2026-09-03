@@ -13,21 +13,20 @@ public class ViajeNacional extends Viaje {
     private int cantidadHoras;
     private double recargo;
     private char codigoAeropuerto;
+    
+ public ViajeNacional(String destino,double precio,int duracionDias,boolean disponible,String ciudadOrigen,int cantidadHoras,double recargo,char codigoAeropuerto) {
+     super(destino, precio, duracionDias, disponible);
 
-    public ViajeNacional(){
-    super();    
-}
-    public ViajeNacional(String ciudadOrigen, int cantidadHoras, double recargo, char codigoAeropuerto){
-        this.ciudadOrigen= ciudadOrigen;
-        this.cantidadHoras= cantidadHoras;
-        this.recargo= recargo;
-        this.codigoAeropuerto= codigoAeropuerto;
+    this.ciudadOrigen = ciudadOrigen;
+    this.cantidadHoras = cantidadHoras;
+    this.recargo = recargo;
+    this.codigoAeropuerto = codigoAeropuerto;
     }
-     public ViajeNacional(String ciudadOrigen, int cantidadHoras, char codigoAeropuerto) {
-         this(ciudadOrigen, cantidadHoras, 5, codigoAeropuerto);
+public ViajeNacional( String destino,double precio,int duracionDias,boolean disponible,String ciudadOrigen,int cantidadHoras,char codigoAeropuerto) {
+    this(destino, precio, duracionDias, disponible,ciudadOrigen, cantidadHoras, 0, codigoAeropuerto);
     }
-    public ViajeNacional(String ciudadOrigen, int cantidadHoras) {
-        this(ciudadOrigen, cantidadHoras, 5, 'N');
+public ViajeNacional(String destino,double precio,int duracionDias,boolean disponible,String ciudadOrigen,int cantidadHoras) {
+    this(destino, precio, duracionDias, disponible,ciudadOrigen, cantidadHoras, 0, 'N');
     }
     public String getciudadOrigen(){
         return(ciudadOrigen);
@@ -52,5 +51,18 @@ public class ViajeNacional extends Viaje {
     }
     public void setcodigoAeropuerto(char codigoAeropuerto){
         this.codigoAeropuerto= codigoAeropuerto;
+    }
+    @Override
+    public String toString() {
+    return "ViajeNacional{" +
+            "destino='" + getDestino() + '\'' +
+            ", precio=" + getPrecio() +
+            ", duracionDias=" + getDuracionDias() +
+            ", disponible=" + isDisponible() +
+            ", ciudadOrigen='" + ciudadOrigen + '\'' +
+            ", cantidadHoras=" + cantidadHoras +
+            ", recargo=" + recargo +
+            ", codigoAeropuerto=" + codigoAeropuerto +
+            '}';
     }
 }
